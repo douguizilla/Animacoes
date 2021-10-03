@@ -29,7 +29,7 @@
             android:id="@+id/imgBazinga"
             android:layout_gravity="center"
             android:scaleType="centerCrop"
-            android:src="@tools:sample/backgrounds/scenic" />
+            android:src="@drawable/me" />
     </FrameLayout>
     <Button
         android:id="@+id/btnPlay"
