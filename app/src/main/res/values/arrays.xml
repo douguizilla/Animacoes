@@ -21,4 +21,12 @@
         <item>LinearInterpolator</item>
         <item>OvershootInterpolator</item>
     </string-array>
+    <string-array name="animators">
+        <item>AlphaAnimator</item>
+        <item>RotateAnimator</item>
+        <item>ScaleAnimator</item>
+        <item>TranslateAnimator</item>
+        <item>AnimatorSet</item>
+    </string-array>
+
 </resources>
