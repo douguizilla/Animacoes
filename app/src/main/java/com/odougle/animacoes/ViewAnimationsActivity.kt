@@ -10,7 +10,7 @@ import androidx.interpolator.view.animation.LinearOutSlowInInterpolator
 import com.odougle.animacoes.databinding.ActivityViewAnimationsBinding
 
 class ViewAnimationsActivity : AppCompatActivity() {
-    private val binding = ActivityViewAnimationsBinding.inflate(layoutInflater)
+    private lateinit var binding : ActivityViewAnimationsBinding
     private val animations: Array<Animation> by lazy{
         initAnimations()
     }
@@ -21,7 +21,7 @@ class ViewAnimationsActivity : AppCompatActivity() {
 
     private val animationListener = object: Animation.AnimationListener{
         override fun onAnimationStart(animation: Animation?) {
-            TODO("Not yet implemented")
+
         }
 
         override fun onAnimationEnd(animation: Animation?) {
@@ -30,13 +30,14 @@ class ViewAnimationsActivity : AppCompatActivity() {
         }
 
         override fun onAnimationRepeat(animation: Animation?) {
-            TODO("Not yet implemented")
+
         }
 
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityViewAnimationsBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.btnPlay.setOnClickListener { executeAnimation() }
     }
